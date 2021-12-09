@@ -14,33 +14,7 @@
    // tapping_term_ms = <200>;
 };
 
-&mmv {
-   time-to-max-speed-ms = <680>;
-   acceleration-exponent=<2>;
-};
 / { 
-
-
-    behaviors {
-    hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-	td: tapdance {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPDANCE";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
 
     combos {
         compatible = "zmk,combos";
@@ -49,32 +23,21 @@
             key-positions = <4 5>;
             bindings = <&kp ESC>;
         };
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            bindings = <&kp RALT>;
-        };
         combo_ralt {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&sk RALT>;
+        };
+        combo_tab {
             timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&kp TAB>;
         };
-        combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp LALT>;
-        };
         combo_lgui {
             timeout-ms = <50>;
-            key-positions = <18 19>;
+            key-positions = <32 34>;
             bindings = <&kp LGUI>;
-        };
-        combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp RGUI>;
-        };
-        
+        };        
 
         
     };
@@ -84,27 +47,27 @@
                 
        	default_layer {
 		bindings = <
-		&kp Y  &kp C  &kp L  &kp M             &kp K 			&kp Z          &kp F  &kp U            &td COMMA MINUS  &td SQT SEMI
-		&kp I  &kp S  &kp R  &kp T             &kp G 			&kp P          &kp N  &kp E            &kp A            &kp O
-		&kp Q  &kp V  &kp W  &kp D             &kp J			&kp B          &kp H  &td SLASH UNDER  &td DOT EXCL     &kp X
-          				     &mt LSHIFT SPACE  &td LSHIFT LGUI	&td RCTL RALT  &to 1 
+		&kp Y  &kp C  &kp L  &kp M             &kp K 			&kp Z     &kp F  &kp U      &kp COMMA  &kp SQT 
+		&kp I  &kp S  &kp R  &kp T             &kp G 			&kp P     &kp N  &kp E      &kp A      &kp O
+		&kp Q  &kp V  &kp W  &kp D             &kp J			&kp B     &kp H  &kp SLASH  &kp DOT    &kp X
+          				     &mt LSHIFT SPACE  &sk LSHIFT    	&sk RCTL  &to 1 
 		>;
 		};
 
        	left_layer {
 		bindings = <
-		&kp LA(TAB)  &kp HOME     &kp UP    &kp END        &kp BSPC			&td UNDER EQUAL &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp BSPC 
-		&kp TAB      &kp LEFT     &kp DOWN  &kp RIGHT      &kp DEL 			&td MINUS PLUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &to 2 
-		&kp ESC      &kp LC(LEFT) &kp K_APP &kp LC(RIGHT)  &kp RET    		&td SLASH STAR  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp RET 
-					                        &to 0          &trans  			&trans          &kp NUM_0
+		&kp LA(TAB)  &kp HOME     &kp UP    &kp END        &kp BSPC			&kp EQUAL  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp BSPC 
+		&kp TAB      &kp LEFT     &kp DOWN  &kp RIGHT      &kp DEL 			&kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &to 2 
+		&kp ESC      &kp LC(LEFT) &kp K_APP &kp LC(RIGHT)  &kp RET    		&kp SLASH  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp RET 
+					                        &to 0          &trans  			&trans     &kp NUM_0
 		>;
 		};
 		
 		right_layer {
 		bindings = <
-		&kp EXCL    &kp AT       &kp HASH  &kp DLLR     &kp PRCNT      	&kp CARET  &kp AMPS      &kp STAR  &kp LPRN  &kp BSPC 
-		&kp GRAVE   &kp TILDE    &kp PG_DN &kp PG_UP    &kp BSLH  	    &kp LPAR   &kp RPAR      &kp LBRC  &kp RBRC  &kp DEL
-		&kp K_MUTE  &kp K_VOL_DN &kp K_PP  &kp K_VOL_UP &none  	        &kp LT     &kp GT        &kp LBKT  &kp RBKT  &kp RET
+		&kp EXCL    &kp AT       &kp HASH  &kp DLLR     &kp PRCNT      	&kp CARET  &kp AMPS  &kp STAR  &kp LPRN  &kp BSPC 
+		&kp GRAVE   &kp TILDE    &kp PG_DN &kp PG_UP    &kp BSLH  	    &kp LPAR   &kp RPAR  &kp LBRC  &kp RBRC  &kp DEL
+		&kp K_MUTE  &kp K_VOL_DN &kp K_PP  &kp K_VOL_UP &kp C_PIP       &kp LT     &kp GT    &kp LBKT  &kp RBKT  &kp RET
 					                       &to 0        &trans  	   	&trans     &to 3 
 		>;
 		};	
