@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 
 &mt {
@@ -70,7 +71,15 @@
             timeout-ms = <50>;
             key-positions = <31 23 24>;
             bindings = <&sk LGUI>;
-        };       
+        };    
+        combo_outtog {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+			layers = <3>;
+            bindings = <&out OUT_TOG>;
+        };    
+
+		
 
         
     };
@@ -100,7 +109,7 @@
 		bindings = <
 		&kp EXCL    &kp AT       &kp HASH  &kp DLLR     &kp PRCNT      	&kp CARET  &kp AMPS  &kp STAR  &kp LPRN  &kp BSPC 
 		&kp GRAVE   &kp TILDE    &kp PG_DN &kp PG_UP    &kp BSLH  	    &kp LPAR   &kp RPAR  &kp LBRC  &kp RBRC  &kp DEL
-		&kp K_MUTE  &kp K_VOL_DN &kp K_PP  &kp K_VOL_UP &kp OUT_TOG     &kp LT     &kp GT    &kp LBKT  &kp RBKT  &kp RET
+		&kp K_MUTE  &kp K_VOL_DN &kp K_PP  &kp K_VOL_UP &kp C_PIP       &kp LT     &kp GT    &kp LBKT  &kp RBKT  &kp RET
 					                       &to 0        &trans  	   	&trans     &to 3 
 		>;
 		};	
