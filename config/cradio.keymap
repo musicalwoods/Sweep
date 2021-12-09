@@ -22,22 +22,55 @@
             timeout-ms = <50>;
             key-positions = <3 4>;
             bindings = <&kp ESC>;
-        };
+        };   
         combo_ralt {
             timeout-ms = <50>;
             key-positions = <31 32>;
             bindings = <&sk RALT>;
-        };
+        };   
         combo_tab {
             timeout-ms = <50>;
             key-positions = <13 14>;
             bindings = <&kp TAB>;
-        };
-        combo_lgui {
+        };   
+		combo_L1 {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+			layers = <0>;
+            bindings = <&to 1>;
+        };    
+		combo_L2 {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+			layers = <1>;
+            bindings = <&to 2>;
+        };          
+		combo_L3 {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+			layers = <2>;
+            bindings = <&to 3>;
+        };     
+        combo_rgui {
             timeout-ms = <50>;
             key-positions = <31 33>;
-            bindings = <&kp LGUI>;
+            bindings = <&sk RGUI>;
         };        
+        combo_lctl {
+            timeout-ms = <50>;
+            key-positions = <31 3 4>;
+            bindings = <&sk LCTL>;
+        };       
+        combo_lalt {
+            timeout-ms = <50>;
+            key-positions = <31 13 14>;
+            bindings = <&sk LALT>;
+        };       
+        combo_lgui {
+            timeout-ms = <50>;
+            key-positions = <31 23 24>;
+            bindings = <&sk LGUI>;
+        };       
 
         
     };
@@ -47,10 +80,10 @@
                 
        	default_layer {
 		bindings = <
-		&kp Y  &kp C  &kp L  &kp M             &kp K 			&kp Z     &kp F  &kp U      &kp COMMA  &kp SQT 
-		&kp I  &kp S  &kp R  &kp T             &kp G 			&kp P     &kp N  &kp E      &kp A      &kp O
-		&kp Q  &kp V  &kp W  &kp D             &kp J			&kp B     &kp H  &kp SLASH  &kp DOT    &kp X
-          				     &mt LSHIFT SPACE  &sk LSHIFT    	&sk RCTL  &to 1 
+		&kp Y  &kp C  &kp L  &kp M      &kp K 			&kp Z     &kp F  &kp U      &kp COMMA  &kp SQT 
+		&kp I  &kp S  &kp R  &kp T      &kp G 			&kp P     &kp N  &kp E      &kp A      &kp O
+		&kp Q  &kp V  &kp W  &kp D      &kp J			&kp B     &kp H  &kp SLASH  &kp DOT    &kp X
+          				     &kp SPACE  &sk LSHIFT    	&sk RCTL  &to 1 
 		>;
 		};
 
