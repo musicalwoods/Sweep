@@ -24,15 +24,16 @@
             key-positions = <3 4>;
             bindings = <&kp ESC>;
         };   
-        combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&sk RALT>;
-        };   
         combo_tab {
             timeout-ms = <50>;
             key-positions = <13 14>;
             bindings = <&kp TAB>;
+        };   
+		combo_L0 {
+            timeout-ms = <50>;
+            key-positions = <25 26>;
+			layers = <1 2 3>;
+            bindings = <&to 0;
         };   
 		combo_L1 {
             timeout-ms = <50>;
@@ -52,26 +53,51 @@
 			layers = <2>;
             bindings = <&to 3>;
         };     
-        combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <31 33>;
-            bindings = <&sk RGUI>;
-        };        
         combo_lctl {
             timeout-ms = <50>;
-            key-positions = <31 3 4>;
+            key-positions = <31 23 24>;
             bindings = <&sk LCTL>;
+        };       
+        combo_lctl2 {
+            timeout-ms = <20>;
+            key-positions = <30 13>;
+            bindings = <&sk LCTL>;
+        };       
+        combo_rctl {
+            timeout-ms = <50>;
+            key-positions = <33 16>;
+            bindings = <&sk RCTL>;
         };       
         combo_lalt {
             timeout-ms = <50>;
             key-positions = <31 13 14>;
             bindings = <&sk LALT>;
         };       
+        combo_lalt {
+            timeout-ms = <20>;
+            key-positions = <30 12>;
+            bindings = <&sk LALT>;
+        };      
+        combo_ralt {
+            timeout-ms = <50>;
+            key-positions = <33 17>;
+            bindings = <&sk RALT>;
+        };   
         combo_lgui {
             timeout-ms = <50>;
-            key-positions = <31 23 24>;
+            key-positions = <31 3 4>;
             bindings = <&sk LGUI>;
-        };    
+        };         
+        combo_lgui2 {
+            timeout-ms = <20>;
+            key-positions = <30 11>;
+            bindings = <&sk LGUI>;
+        };        
+        combo_rgui {
+            timeout-ms = <50>;
+            key-positions = <33 18>;
+            bindings = <&sk RGUI>;
+        };        
         combo_outtog {
             timeout-ms = <50>;
             key-positions = <23 24>;
@@ -98,10 +124,10 @@
 
        	left_layer {
 		bindings = <
-		&kp LA(TAB)  &kp HOME     &kp UP    &kp END        &kp BSPC			&kp EQUAL  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp BSPC 
-		&kp TAB      &kp LEFT     &kp DOWN  &kp RIGHT      &kp DEL 			&kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &to 2 
-		&kp ESC      &kp LC(LEFT) &kp K_APP &kp LC(RIGHT)  &kp RET    		&kp SLASH  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp RET 
-					                        &to 0          &trans  			&trans     &kp NUM_0
+		&kp LA(TAB)  &kp HOME     &kp UP    &kp END        &kp BSPC		&kp EQUAL  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp BSPC 
+		&kp TAB      &kp LEFT     &kp DOWN  &kp RIGHT      &kp DEL 		&kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &to 2 
+		&kp ESC      &kp LC(LEFT) &kp K_APP &kp LC(RIGHT)  &kp RET    	&kp SLASH  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp RET 
+					                        &to 0          &trans  		&trans     &kp NUM_0
 		>;
 		};
 		
