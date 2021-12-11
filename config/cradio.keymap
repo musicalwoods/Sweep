@@ -44,6 +44,12 @@
             key-positions = <13 14>;
             bindings = <&kp TAB>;
         };   
+		combo_L0 {
+            timeout-ms = <50>;
+            key-positions = <25 26>;
+			layers = <1 2 3>;
+            bindings = <&to 0>;
+        };   
 		combo_L1 {
             timeout-ms = <50>;
             key-positions = <23 24>;
