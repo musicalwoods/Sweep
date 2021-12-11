@@ -54,11 +54,6 @@
             bindings = <&to 3>;
         };     
         combo_lctl {
-            timeout-ms = <50>;
-            key-positions = <31 23 24>;
-            bindings = <&sk LCTL>;
-        };       
-        combo_lctl2 {
             timeout-ms = <20>;
             key-positions = <30 13>;
             bindings = <&sk LCTL>;
@@ -69,11 +64,6 @@
             bindings = <&sk RCTL>;
         };       
         combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <31 13 14>;
-            bindings = <&sk LALT>;
-        };       
-        combo_lalt2 {
             timeout-ms = <20>;
             key-positions = <30 12>;
             bindings = <&sk LALT>;
@@ -82,13 +72,8 @@
             timeout-ms = <50>;
             key-positions = <33 17>;
             bindings = <&sk RALT>;
-        };   
+        };     
         combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <31 3 4>;
-            bindings = <&sk LGUI>;
-        };         
-        combo_lgui2 {
             timeout-ms = <20>;
             key-positions = <30 11>;
             bindings = <&sk LGUI>;
