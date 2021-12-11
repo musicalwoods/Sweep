@@ -25,7 +25,7 @@
             bindings = <&kp ESC>;
         };   
         combo_ralt {
-            timeout-ms = <50>;
+            timeout-ms = <20>;
             key-positions = <30 12>;
             bindings = <&sk RALT>;
         };   
