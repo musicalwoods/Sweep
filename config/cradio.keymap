@@ -24,11 +24,21 @@
             key-positions = <3 4>;
             bindings = <&kp ESC>;
         };   
+        combo_rctl {
+            timeout-ms = <20>;
+            key-positions = <30 13>;
+            bindings = <&sk RCTL>;
+        };  
         combo_ralt {
             timeout-ms = <20>;
             key-positions = <30 12>;
             bindings = <&sk RALT>;
-        };   
+        };    
+        combo_rgui {
+            timeout-ms = <50>;
+            key-positions = <31 33>;
+            bindings = <&sk RGUI>;
+        };  
         combo_tab {
             timeout-ms = <50>;
             key-positions = <13 14>;
@@ -51,12 +61,7 @@
             key-positions = <23 24>;
 			layers = <2>;
             bindings = <&to 3>;
-        };     
-        combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <31 33>;
-            bindings = <&sk RGUI>;
-        };        
+        };          
         combo_lctl {
             timeout-ms = <50>;
             key-positions = <31 3 4>;
