@@ -73,7 +73,7 @@
             key-positions = <31 13 14>;
             bindings = <&sk LALT>;
         };       
-        combo_lalt {
+        combo_lalt2 {
             timeout-ms = <20>;
             key-positions = <30 12>;
             bindings = <&sk LALT>;
