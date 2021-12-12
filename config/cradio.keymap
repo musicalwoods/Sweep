@@ -106,10 +106,10 @@
           				     &kp SPACE  &sk LSHIFT    	&sk RCTL  &to 1 
 		>;
 		};
-
+  
        	left_layer {
 		bindings = <
-		&kp LA(TAB)  &kp HOME     &kp UP    &kp END        &kp DEL			&kp EQUAL  &kp NUM_7  &kp NUM_8  &kp NUM_9  &to 2 
+		&kp K_APP    &kp HOME     &kp UP    &kp END        &kp DEL			&kp EQUAL  &kp NUM_7  &kp NUM_8  &kp NUM_9  &to 2 
 		&kp TAB      &kp LEFT     &kp DOWN  &kp RIGHT      &kp BSPC			&kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp BSPC 
 		&kp ESC      &kp LC(LEFT) &kp C_AC_SCROLL_DOWN &kp LC(RIGHT)  &kp RET    		&kp SLASH  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp RET 
 					                        &to 0          &trans  			&trans     &kp NUM_0
