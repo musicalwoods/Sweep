@@ -109,8 +109,8 @@
 
        	left_layer {
 		bindings = <
-		&kp LA(TAB)  &kp HOME     &kp UP    &kp END        &kp BSPC			&kp EQUAL  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp BSPC 
-		&kp TAB      &kp LEFT     &kp DOWN  &kp RIGHT      &kp DEL 			&kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &to 2 
+		&kp LA(TAB)  &kp HOME     &kp UP    &kp END        &kp DEL			&kp EQUAL  &kp NUM_7  &kp NUM_8  &kp NUM_9  &to 2 
+		&kp TAB      &kp LEFT     &kp DOWN  &kp RIGHT      &kp BSPC			&kp MINUS  &kp NUM_4  &kp NUM_5  &kp NUM_6  &kp BSPC 
 		&kp ESC      &kp LC(LEFT) &kp K_APP &kp LC(RIGHT)  &kp RET    		&kp SLASH  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp RET 
 					                        &to 0          &trans  			&trans     &kp NUM_0
 		>;
@@ -118,8 +118,8 @@
 		
 		right_layer {
 		bindings = <
-		&kp EXCL    &kp AT       &kp HASH  &kp DLLR     &kp PRCNT      	&kp CARET  &kp AMPS  &kp STAR  &kp SEMI  &kp BSPC 
-		&kp GRAVE   &kp SEMI     &kp PG_UP &kp PG_DN    &kp BSLH  	    &kp LPAR   &kp RPAR  &kp LBRC  &kp RBRC  &kp DEL
+		&kp EXCL    &kp AT       &kp HASH  &kp DLLR     &kp PRCNT      	&kp CARET  &kp AMPS  &kp STAR  &kp SEMI  &kp DEL 
+		&kp GRAVE   &kp SEMI     &kp PG_UP &kp PG_DN    &kp BSLH  	    &kp LPAR   &kp RPAR  &kp LBRC  &kp RBRC  &kp BSPC
 		&kp K_MUTE  &kp K_VOL_DN &kp K_PP  &kp K_VOL_UP &kp C_PIP       &kp LT     &kp GT    &kp LBKT  &kp RBKT  &kp RET
 					                       &to 0        &trans  	   	&trans     &to 3 
 		>;
