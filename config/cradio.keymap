@@ -57,37 +57,31 @@
             bindings = <&to 1>;
         };    
 		combo_L2 {
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             key-positions = <23 30>;
 			layers = <1>;
             bindings = <&to 2>;
         };          
 		combo_L3 {
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             key-positions = <23 30>;
 			layers = <2>;
             bindings = <&to 3>;
         };          
         combo_lctl {
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             key-positions = <33 16>;
             bindings = <&sk LCTL>;
         };       
         combo_lalt {
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             key-positions = <33 17>;
             bindings = <&sk LALT>;
         };       
         combo_lgui {
-            timeout-ms = <20>;
+            timeout-ms = <30>;
             key-positions = <33 18>;
             bindings = <&sk LGUI>;
-        };    
-        combo_outtog {
-            timeout-ms = <50>;
-            key-positions = <23 24>;
-			layers = <3>;
-            bindings = <&out OUT_TOG>;
         };    
 
 		
@@ -127,10 +121,10 @@
 		
 		tri_layer {
 		bindings = <
-		&kp F1      &kp F2      &kp F3      &kp F4     &bt BT_SEL 0     &bt BT_CLR  &kp F13    &kp F14         &kp F15    &kp F16
-		&kp F5      &kp F6      &kp F7      &kp F8     &bt BT_SEL 1     &bt BT_NXT  &kp F17    &kp F18         &kp F19    &kp F20
-		&kp F9      &kp F10     &kp F11     &kp F12    &bt BT_SEL 2     &bt BT_PRV  &kp PSCRN  &kp PAUSE_BREAK &kp SLCK   &kp INS   
-					                        &to 0      &trans  			&trans      &kp RALT 
+		&kp F1      &kp F2      &kp F3      &kp F4     &kp DEL          &bt BT_CLR  &out OUT_USB &out OUT_BLE &kp INS      &kp DEL
+		&kp F5      &kp F6      &kp F7      &kp F8     &kp BSPC         &bt BT_NXT  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp BSPC
+		&kp F9      &kp F10     &kp F11     &kp F12    &kp RET          &bt BT_PRV  &kp PSCRN    &kp PAUSE_BREAK &kp SLCK  &kp RET   
+					                        &to 0      &trans  			&trans      &none
 		>;
 		};	
         
