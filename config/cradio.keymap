@@ -78,7 +78,12 @@
             timeout-ms = <30>;
             key-positions = <33 18>;
             bindings = <&sk RGUI>;
-        };               
+        };    
+        combo_rsl2 {
+            timeout-ms = <60>;
+            key-positions = <33 19>;
+            bindings = <&sl 2>;
+		};	     	
 		combo_rL1 {
             timeout-ms = <30>;
             key-positions = <33 26>;
