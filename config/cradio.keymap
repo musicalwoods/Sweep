@@ -80,7 +80,7 @@
             bindings = <&sk RGUI>;
         };    
         combo_rsl2 {
-            timeout-ms = <60>;
+            timeout-ms = <30>;
             key-positions = <33 19>;
             bindings = <&sl 2>;
 		};	     	
